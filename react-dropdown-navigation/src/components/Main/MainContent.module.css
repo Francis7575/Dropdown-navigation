@@ -1,0 +1,176 @@
+.imageHeroDesktop {
+    display: none;
+}
+
+.imageHeroMobile {
+    max-width: 23.43rem;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    text-align: center;
+    margin-top: 2.93rem;
+    padding: 0 1rem;
+}
+
+.h1 {
+    color: #151515;
+    font-size: 2.25rem;
+    margin-bottom: 1rem;
+    letter-spacing: -0.5px;
+    line-height: 2.62rem;
+}
+
+.paragraph {
+    color: #686868;
+    line-height: 1.62rem;
+    margin-bottom: 1.5rem;
+}
+
+.button {
+    color: #FAFAFA;
+    background: #151515;
+    font-weight: 700;
+    letter-spacing: -0.222px;
+    line-height: 1.62rem;
+    text-align: center;
+    border: none;
+    min-width: 10.18rem;
+    padding: .93rem 0;
+    border-radius: 15px;
+    font-size: 1rem;
+    cursor: pointer;
+    border: 1px solid #151515;
+}
+
+.imageSection {
+    display: flex;
+    gap: 1.79rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 0 1rem 5.87rem 1rem;
+}
+
+.databiz {
+    max-width: 5rem;
+}
+
+.audiophile {
+    max-width: 3.25rem;
+}
+
+.meet {
+    max-width: 4rem;
+}
+
+.maker {
+    max-width: 3.62rem;
+}
+
+@media(min-width: 64em) {
+    .imageHeroMobile {
+        display: none;
+    }
+
+    .imageHeroDesktop {
+        display: block;
+        max-width: 20rem;
+    }
+
+    .pictureContainer {
+        padding-right: 8.12rem;
+    }
+
+    .container {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .article {
+        text-align: left;
+        margin: 0;
+        padding: 5rem 0 0 0;
+    }
+
+    .h1 {
+        font-size: 3.5rem;
+        max-width: 22.75rem;
+        letter-spacing: -1.111px;
+        line-height: 3.3rem;
+    }
+
+    .paragraph {
+        max-width: 25.81rem;
+    }
+
+    .textContainer {
+        padding-left: 8.12rem;
+    }
+
+    .imageSection {
+        padding: 0 0 5.87rem 0;
+        justify-content: flex-start;
+    }
+
+    .button:hover {
+        background: none;
+        color: #151515;
+        border: 1px solid #151515;
+    }
+}
+
+@media (min-width: 90em) {
+    .imageHeroDesktop {
+        max-width: 30rem;
+    }
+    .h1 {
+        font-size: 5rem;
+        max-width: 32.75rem;
+        line-height: 5rem;
+        margin-bottom: 3rem;
+    }
+
+    .paragraph {
+        margin-bottom: 3.18rem;
+    }
+
+    .button {
+        font-size: 1.12rem;
+    }
+
+    .imageSection {
+        margin-top: 7.25rem;
+        gap: 2.5rem;
+    }
+
+    .databiz {
+        max-width: 7rem;
+    }
+    
+    .audiophile {
+        max-width: 4.5rem;
+    }
+    
+    .meet {
+        max-width: 5.56rem;
+    }
+    
+    .maker {
+        max-width: 5.12rem;
+    }
+
+    .textContainer {
+        padding-left: 10.31rem;
+    }
+
+    .article {
+        padding: 6.5rem 0 0 0;
+    }
+}

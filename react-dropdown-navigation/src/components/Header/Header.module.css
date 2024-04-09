@@ -1,0 +1,234 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem 0 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.hideMenu {
+    display: none;
+}
+
+.showMenu {
+    display: block;
+}
+
+.navBar {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #fff;
+    max-width: 15rem;
+    width: 100%;
+    z-index: 5;
+    padding: 4.87rem 0 0 1.5rem;
+    z-index: 998;
+}
+
+.menuButtons {
+    z-index: 999;
+}
+
+.featureBtn,
+.companyBtn,
+.menuButtons {
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.featureBtn,
+.companyBtn {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #686868;
+    font-size: 1rem;
+    line-height: 1.62rem;
+}
+
+.menuContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.ulFeatures,
+.ulCompany {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding-left: 1.5rem;
+    margin: 1rem 0;
+}
+
+.aFeatures {
+    display: flex;
+    align-items: center;
+    gap: .87rem;
+}
+
+.aCompany,
+.aFeatures {
+    color: #686868;
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 995;
+}
+
+.lastUl {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.careers {
+    margin-bottom: 1rem;
+}
+
+.about {
+    margin-bottom: 2rem;
+}
+
+.register {
+    text-align: center;
+    padding: .81rem 0;
+    border: 1.5px solid #686868;
+    border-radius: 14px;
+    cursor: pointer;
+    min-width: 12.18rem;
+}
+
+.register:hover {
+    border: 1.5px solid #151515;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+@media (min-width: 64em) {
+    .header {
+        display: block;
+        padding: 1.5rem 2.5rem 0 2.5rem;
+        margin-bottom: 5rem;
+    }
+
+    .navBar,
+    .background {
+        position: static;
+    }
+
+    .navBar {
+        padding: 0;
+        max-width: none;
+        background: none;
+    }
+
+    .menuButtons {
+        display: none;
+    }
+
+    .hideMenu {
+        display: block;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: row;
+        align-items: center;
+        gap: 2.5rem;
+    }
+
+    .menuContainer {
+        flex-direction: row;
+        align-items: center;
+        margin-left: 2rem;
+        justify-content: space-between;
+    }
+
+    .lastUl {
+        flex-direction: row;
+    }
+
+    .careersAbout {
+        display: flex;
+        gap: 2.5rem;
+    }
+
+    .careers,
+    .about {
+        margin: 0;
+    }
+
+    .featureBtn,
+    .companyBtn {
+        gap: .56rem;
+    }
+
+    .hover:hover {
+        color: #151515;
+    }
+
+    .ulFeaturesWrapper,
+    .ulCompanyWrapper {
+        box-shadow: 0px 10px 40px 0px rgba(0, 0, 0, 0.15);
+        background: #fff;
+        border-radius: 10px;
+        min-width: 9rem;
+        margin-top: .87rem;
+        position: absolute;
+    }
+
+    .ulFeaturesWrapper {
+        right: 0;
+    }
+
+    .ulCompanyWrapper {
+        left: 0;
+    }
+
+    .ulFeatures,
+    .ulCompany {
+        padding: 0;
+        margin-left: 1.5rem;
+    }
+
+    .aFeatures,
+    .aCompany {
+        font-size: .87rem;
+    }
+}
+
+@media (min-width: 90em) {
+    .hover {
+        color: #686868;
+        font-size: .87rem;
+    }
+
+    .register {
+        min-width: 6.5rem;
+    }
+
+    .lastUl {
+        gap: 2.5rem;
+    }
+
+    .menuContainer {
+        margin-left: 3.87rem;
+    }
+}
